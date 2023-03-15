@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "century gothic";
+    border: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 0%;
+    height: 100vh;
+    
+}
+section nav{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    position:fixed;
+    right: 0;
+    left:0;
+    background: rgb(244, 250, 252);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+section nav.logo{
+    height:20px;
+    width:30px;
+}
+section nav ul{
+    list-style:none;
+}
+section nav ul li{
+    display:inline-block;
+    margin: 0 15px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+
+}
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(28, 28, 172);
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+ #home{
+    font-size:xx-large;
+    font-display:inline-block;
+    white-space: nowrap;
+    text-align: center;
+    
+ }
+ h1{
+    color: rgb(39, 175, 168);
+ }
+ p{
+    font-size: small;
+ }
+
+ #home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 300px;
+    justify-content: center;
+    align-items: center;
+ }
+
+ #home::before{
+    content:"";
+    background-image:"1234.jpeg";
+    position:absolute;
+    height:100%;
+    width: 100%;
+    z-index:-1;
+    opacity:0.999;
+ }
+
+.about{
+    position:relative;
+}
+.image{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: black;
+    color:white;
+    padding-left:20px;
+    padding-right:20px;
+    filter:blur(8px);
+}
+.About-text{
+    color:white;
+    border:2px solid #f1f1f1;
+    border-radius: 10px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:2;
+    width:80%;
+    padding:20px;
+    text-align:centre;
+    font-size:xx-large;
+}
+
+.menu h1{
+    text-align: center;
+    font-size: xxx-large;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom:30px;
+}
+.menu h1 span{
+    color:#fac031;
+    margin-left:15px;
+}
+
